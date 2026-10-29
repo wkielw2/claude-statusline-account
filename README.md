@@ -10,7 +10,7 @@ usuario@host ~/proyecto (rama)
 - **Línea 1:** usuario, máquina, directorio y rama de git (si la hay).
 - **Línea 2:** la cuenta de claude.ai con la que está iniciada la sesión, leída de `oauthAccount` en `.claude.json` (solo email y organización). La organización se omite si solo repite el email, como en las cuentas personales. Sin sesión de claude.ai muestra «sin sesión de claude.ai».
 
-Respeta `CLAUDE_CONFIG_DIR`, así que cada perfil (por ejemplo `ccp personal` y `ccp meso`) muestra su propia cuenta.
+Respeta `CLAUDE_CONFIG_DIR`, así que cada perfil (por ejemplo, uno personal y otro del trabajo) muestra su propia cuenta.
 
 ## Requisitos
 
@@ -27,7 +27,7 @@ cd claude-statusline-account
 Sin argumentos instala en `$CLAUDE_CONFIG_DIR` o, si no está definida, en `~/.claude`. Para varios perfiles, pasa sus directorios:
 
 ```bash
-./install.sh ~/.claude-personal ~/.claude-meso
+./install.sh ~/.claude-personal ~/.claude-trabajo
 ```
 
 En cada directorio, el instalador:
